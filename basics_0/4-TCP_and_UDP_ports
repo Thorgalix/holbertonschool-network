@@ -1,4 +1,7 @@
 #!/usr/bin/env bash
 # Script for display listening ports
-netstat -lpn
-
+if command -v netstat >/dev/null 2>&1; then
+	netstat -lpn
+else
+	ss -ltnup
+fi
