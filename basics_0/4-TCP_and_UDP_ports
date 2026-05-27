@@ -1,3 +1,4 @@
 #!/usr/bin/env bash
-# Script to display listening ports.
-netstat -lpn
+# Displays listening ports
+
+netstat -lntup -lxpn
